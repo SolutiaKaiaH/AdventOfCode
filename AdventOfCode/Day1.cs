@@ -25,22 +25,7 @@ namespace AdventOfCode
             {
 
 
-                // Replace spelled-out numbers in the first 5 characters
-                string[] spelledOutNumbers = { "one" , "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-                int count = 1;
-                foreach (var spelledOutNumber in spelledOutNumbers)
-                {
-                    if ((line.Length >= 5 && line.Substring(0, 5).Contains(spelledOutNumber)))  
-                    {
-                        line = line.Replace(spelledOutNumber, count.ToString());
-                        
-                    }
-                    if (line.Length >= 5 && line.Substring(line.Length - 5).Contains(spelledOutNumber)){
-                        line = line.Replace(spelledOutNumber, count.ToString());
-                       
-                    }
-                    count++;
-                }
+               
 
 
 
@@ -49,39 +34,39 @@ namespace AdventOfCode
             {
                 if (line.Contains("one"))
                 {
-                    line = line.Replace("one", "1");
+                    line = line.Replace("one", "on1e");
                 }
                 if (line.Contains("two"))
                 {
-                    line = line.Replace("two", "2");
+                    line = line.Replace("two", "t2wo");
                 }
                 if (line.Contains("three"))
                 {
-                    line = line.Replace("three", "3");
+                    line = line.Replace("three", "th3ree");
                 }
                 if (line.Contains("four"))
                 {
-                    line = line.Replace("four", "4");
+                    line = line.Replace("four", "fo4ur");
                 }
                 if (line.Contains("five"))
                 {
-                    line = line.Replace("five", "5");
+                    line = line.Replace("five", "fi5ve");
                 }
                 if (line.Contains("six"))
                 {
-                    line = line.Replace("six", "6");
+                    line = line.Replace("six", "s6ix");
                 }
                 if (line.Contains("seven"))
                 {
-                    line = line.Replace("seven", "7");
+                    line = line.Replace("seven", "sev7en");
                 }
                 if (line.Contains("eight"))
                 {
-                    line = line.Replace("eight", "8");
+                    line = line.Replace("eight", "ei8ght");
                 }
                 if (line.Contains("nine"))
                 {
-                    line = line.Replace("nine", "9");
+                    line = line.Replace("nine", "ni9ne");
                 }
                
             }
